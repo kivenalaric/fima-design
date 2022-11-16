@@ -5,9 +5,14 @@ body {
 }
 
 #page-container {
-  display: block;
-  margin: 0;
-  width: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+position: relative;
+width: 414px;
+height: 11098px;
+background: #FFFFFF;
 }
 
 .navbar {
