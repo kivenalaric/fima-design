@@ -207,6 +207,10 @@ nav {
 
 .about-cont {
   padding: 40px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
 }
 
 .about-row1 h2 {
@@ -298,11 +302,20 @@ nav {
   color: #fff;
 }
 
+.testimonial2 {
+  display: grid;
+  grid-template-columns: 414px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
 .testimonial2 .t-boxes {
   background-color: #fff;
-  max-width: 300px;
+  max-width: 250px;
   padding: 20px;
-  margin-top: 30px;
+  align-self: center;
+  margin: 30px auto 0;
 }
 
 .t-boxes h3 {
