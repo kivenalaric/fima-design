@@ -7,6 +7,11 @@
   line-height: 24px;
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 main {
   z-index: 1;
   background-color: #252b42;
@@ -477,7 +482,24 @@ nav {
 
 .team2-container {
   margin: auto;
-  padding: 40px;
+  padding: 40px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.team2-row1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 0;
+}
+
+.team2-row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 }
 
 .team2-head {
@@ -508,9 +530,9 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin: 20px auto;
+  align-items: flex-start;
+  gap: 30px;
+  /* margin: 20px auto; */
 }
 
 .t2-cards {
@@ -555,12 +577,45 @@ nav {
   max-width: 149px;
 }
 
-.contact2-container .contact2-first {
+.contact2-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 0px;
+  gap: 60px;
+  max-width: 330px;
+}
+
+.contact2-main .contact2-first {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
+  padding: 0px;
   gap: 30px;
+}
+
+.contact2-main .contact2-second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.contact2-second-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+}
+
+.contact2-second-carditem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: auto;
 }
 
 .contact2-texts {
@@ -601,13 +656,22 @@ nav {
 }
 
 .contact2-study {
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
+ max-width: fit-content;
+ margin: auto;
+ align-items: center;
+}
+
+.contact2-study .stud {
+  max-width: fit-content;
 }
 
 .contact2-study .stud2 {
   display: none;
+}
+
+.contact2-second form {
+  margin: 0px;
+  padding: 0x;
 }
 
 .form-container {
@@ -615,6 +679,7 @@ nav {
   margin: auto;
   border-radius: 5px;
   padding: 25px;
+  max-width: fit-content;
 }
 
 .form-container h2 {
@@ -879,5 +944,51 @@ nav {
 
   .abt-row2-img {
     background-image: url("../images/media\ bg-cover.png");
+  }
+
+  .team2-container {
+    margin: auto;
+    padding: 80px 0px;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+  }
+  
+  .team2-row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .team2-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    max-width: 864px;
+  }
+
+  .team2-head h2 {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+  }
+
+  .team2-head p {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    text-align: center;
+  } 
+  
+  .team2-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
   }
 }
